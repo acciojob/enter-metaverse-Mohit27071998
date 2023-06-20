@@ -1,7 +1,8 @@
 //your JS code here. If required.
-function updateStatus() {
-  var status = document.getElementById("status");
-  var newHeading = document.createElement("h1");
-  newHeading.textContent = "Entered Metaverse";
-  status.parentNode.replaceChild(newHeading, status);
-}
+let btn = document.getElementById("enterBtn")
+
+btn.addEventListener('click',()=>{
+	let p = document.getElementById("status");
+	p.innerHTML = `<h1>Entered Metaverse</h1>`;
+
+})
